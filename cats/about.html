@@ -8,5 +8,20 @@
 <body>
     <h1>Cats are cool</h1>
     <a href="../index.html">Home</a>
+
+
+    <button id="homeButton">Go to Home</button>
+    <script>
+        document.getElementById('homeButton').addEventListener('click', function() {
+          const goHome = confirm("Would you like to go to index?");
+          if (goHome) {
+            window.location.href = "../index.html";
+          } else {
+            window.location.href = "about.html";
+          }
+        });
+      </script>
+
+
 </body>
 </html>
