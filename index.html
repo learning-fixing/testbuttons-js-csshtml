@@ -17,7 +17,24 @@
     </article>
     <a href="https://google.com/" target="_blank"><button>Google</button></a>
 
-    
+    <button id="hiButton">HI!</button>
+
+    <script>
+      // Add an event listener for the button click
+      document.getElementById('hiButton').addEventListener('click', function() {
+        // Ask the user if they want to go to Google
+        const userChoice = confirm("Do you want to continue to HI Google?");
+  
+        // If user clicks "Yes" (true)
+        if (userChoice) {
+          window.location.href = "https://www.google.com"; // Redirect to Google
+        } else {
+          window.location.href = "cats/about.html"; // Redirect to about.html in the "cats" folder
+        }
+      });
+    </script>
+
+
 
 
 </body>
